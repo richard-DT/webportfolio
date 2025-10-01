@@ -1,0 +1,70 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/*navbar*/
+#navbarNavAltMarkup .nav-link, .navbar-toggler-icon {
+	color: #FFFFFF !important;
+}
+
+/*Landing Page*/
+
+#pictko {
+    
+    width: 300px; 
+    height: 300px;
+    object-fit: cover; 
+    border: 5px solid rgba(0, 123, 255, 0.5); 
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+
+@media (max-width: 767.98px) {
+    #pictko {
+        width: 180px;
+        height: 180px;
+    }
+}
+#landingbg {
+	min-height: 100vh;
+    
+ 
+    /*display: flex;
+    align-items: center;*/
+}
+
+#landing {
+	background: url(./images/wall2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*My Projects*/
+
+#projects img {
+	aspect-ratio: 16/9;
+}
+#projects {
+	background: url(./images/wall1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*Tools*/
+
+#tools img {
+	max-width: 150px;
+	max-height: 150px;
+}
+#tools {
+	background: url(./images/wall1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*Contacts*/
+#contact {
+	background: url(./images/wall2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
