@@ -29,14 +29,15 @@
 	min-height: 100vh;
     
  
-    /*display: flex;
-    align-items: center;*/
 }
 
 #landing {
 	background: url(./images/wall2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+#landing a{
+	text-decoration: none;
 }
 
 /*My Projects*/
@@ -48,6 +49,16 @@
 	background: url(./images/wall1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+#projectAlbum {
+
+	background-color: rgba(65, 105, 225, 0.25);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	border-radius: 5px;
 }
 
 /*Tools*/
