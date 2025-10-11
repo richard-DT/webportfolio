@@ -64,8 +64,18 @@
 /*Tools*/
 
 #tools img {
-	max-width: 150px;
+	max-width: auto;
 	max-height: 150px;
+}
+#jscriptLogo{
+	max-width: auto !important;
+	max-height: 120px !important;
+
+}
+#vscodeLogo{
+	max-width: auto !important;
+	max-height: 120px !important;
+
 }
 #tools {
 	background: url(./images/wall1.jpg);
