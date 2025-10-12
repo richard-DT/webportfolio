@@ -44,7 +44,9 @@
 }
 
 #landing div h1, #landing div p{
-	color: ghostwhite;
+	color: floralwhite;
+	font-weight: 400;
+	font-style: italic;
 }
 
 /*My Projects*/
@@ -85,4 +87,7 @@
 	background: url(./images/wall9.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+form p, #contact div h2 {
+	color: white !important;
 }
