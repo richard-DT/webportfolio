@@ -5,6 +5,9 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 /*navbar*/
 #navbarNavAltMarkup .nav-link, .navbar-toggler-icon {
@@ -28,7 +31,7 @@
         height: 180px;
     }
 }
-#landingbg {
+/*#landingbg {
 	min-height: 100vh; 
 }
 
@@ -45,7 +48,66 @@
 
 #landing div h1, #landing div p{
 	color: floralwhite;
+}*/
+
+#landingbg {
+  position: relative;
+  background: url('./images/wall8.jpg') center/cover no-repeat;
+  color: white;
+  min-height: 100vh;
 }
+
+/* element on top of background but behind the text */
+/*#landingbg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}*/
+
+#landingbg .row {
+  position: relative;
+  z-index: 2; /* keeps your text above the overlay */
+}
+
+#landing h1 {
+  /*font-family: "Montserrat", sans-serif;*/
+  /*font-weight: 300;*/
+  letter-spacing: 1px;
+  /*font-size: 2.8rem;*/
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/*#landingProfession {
+  color: #00bfff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}*/
+
+#landingDesc {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
+  line-height: 1.6;
+}
+
+.cta-btn {
+  background: linear-gradient(90deg, #007bff, #00bfff);
+  border: none;
+  transition: all 0.3s ease;
+}
+.cta-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #00bfff, #007bff);
+}
+
 
 /*My Projects*/
 
@@ -68,24 +130,75 @@
 	border-radius: 5px;
 }
 
+#projects .col-md-6 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#projects .col-md-6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+
 /*Tools*/
 
-#tools img {
+/*#tools img {
 	max-width: auto;
 	max-height: 150px;
-}
+}*/
 /*#tools {
 	background-color: #6AB0F7;
 	background-repeat: no-repeat;
 	background-size: cover;
 }*/
 
+#tools img {
+  width: auto;
+  max-height: 120px;
+  /*opacity: 0.85;*/
+  /*transition: transform 0.3s, opacity 0.3s;*/
+  transition: transform 0.3s;
+}
+#tools img:hover {
+  transform: scale(1.1);
+  /*opacity: 1;*/
+}
+#tools h5 {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 0.5rem;
+}
+#tools {
+  background: linear-gradient(180deg, #e9f3ff, #ffffff);
+  padding: 80px 0;
+}
+
+
+
+
 /*Contacts*/
-#contact {
+
+/*#contact {
 	background: url(./images/wall9.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-form p, #contact div h2 {
+}*/
+/*form p, #contact div h2 {
 	color: white !important;
+}*/
+
+#contact {
+  /*background: linear-gradient(to bottom right, rgba(0,123,255,0.9), rgba(0,193,255,0.9)), url('./images/wall9.jpg');*/
+  background: url(./images/wall9.jpg);
+  background-size: cover;
+  /*background-blend-mode: overlay;*/
+}
+#contact form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+}
+#contact input, #contact textarea {
+  background: rgba(255,255,255,0.9);
 }
