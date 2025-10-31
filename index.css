@@ -46,18 +46,18 @@ html {
   0% {
     background-image: url("./images/wall8.jpg");
   }
-  25% {
-    background-image: url("./images/wall6.jpeg");
-  }
   50% {
-    background-image: url("./images/wall6.jpg");
-  }
-  75% {
     background-image: url("./images/wall8.jpeg");
   }
   100% {
     background-image: url("./images/wall8.jpg");
   }
+  /*75% {
+    background-image: url("./images/wall8.jpeg");
+  }
+  100% {
+    background-image: url("./images/wall8.jpg");
+  }*/
 }
 
 /* Optional: add an overlay for better text contrast */
